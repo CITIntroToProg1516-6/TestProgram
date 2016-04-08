@@ -11,11 +11,13 @@ package firsttest;
  */
 public class FirstTest {
 
-    /**
-     * @param args the command line arguments
-     */
+    public static String hello(int i){
+        if(i > 1000)
+            return "Hello World!";
+        return hello(i + 1);
+    }
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println(hello(0));
     }
     
 }
